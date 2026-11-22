@@ -1,54 +1,60 @@
 # Hi, I'm a Python Backend Developer 👋
 
-I develop backend services, REST APIs, integrations, and web applications — from architecture and database design to testing and deployment.
+**3+ years of programming experience, including approximately 2 years building applications intended for real users.**
 
-My primary focus is **Python, Django REST Framework, PostgreSQL, and Docker**.
+I develop Python backend systems, REST APIs, and integrations, focusing on business logic, data consistency, automated testing, and reliable deployment.
+
+Разрабатываю backend-сервисы на Python/Django, REST API и интеграции для реальных задач.
 
 ## 🛠 Tech Stack
 
-**Backend:** Python · Django · Django REST Framework · FastAPI · Celery
+**Backend:** Python · Django · Django REST Framework · Celery
 
-**Databases:** PostgreSQL · Redis · SQLite · MySQL
+**Databases & Caching:** PostgreSQL · Redis · SQLite
 
-**Testing & Code Quality:** pytest · Ruff · mypy
+**Testing & Quality:** pytest · Ruff · mypy · FastAPI (mock API testing)
 
-**DevOps:** Docker · Docker Compose · Linux · nginx · GitHub Actions
+**Infrastructure:** Docker · Docker Compose · Linux · nginx · GitHub Actions
 
 **Additional:** Next.js · TypeScript · Playwright
 
-## 🚀 Featured Projects
+## 🚀 Projects
 
 ### Olex — E-commerce Platform
 
-A full-stack e-commerce application independently developed and deployed to production.
+*Independently designed, built, and deployed e-commerce platform for aquarium products.*
 
-- REST API built with Django REST Framework
-- Product catalog, filtering, shopping cart, and order management
-- PostgreSQL database and background tasks with Celery
-- Next.js frontend
-- Docker-based deployment on a Linux VPS
+**Status:** Live in production
+
+**Backend engineering highlights:**
+
+- Django REST Framework API with service-layer business logic
+- Transactional checkout, PostgreSQL row locking, and conditional stock updates
+- JWT authentication through a Next.js Backend-for-Frontend (BFF)
+- Celery and Redis for background processing
+- YooKassa integration with idempotent payment-state handling and refunds
+- Automated testing, including PostgreSQL-specific locking tests
+- Docker deployment on a Linux VPS with GitHub Actions CI/CD
 
 **Live website:** https://olexaqua.ru
 
-### FinCERT — Anti-Fraud Data Integration
+**[Project overview & architecture](https://github.com/Shoottrpl/olex-showcase)**
 
-A Python service for retrieving, processing, and validating anti-fraud data through an external REST API.
+*Application source code is private.*
 
-- HTTP client with authentication, retries, and error handling
-- State and version tracking using SQLite
-- Data validation and safe file publication
-- Automated testing with pytest and a FastAPI mock server
-- Linux deployment configuration and documentation
+### Anti-Fraud API Integration — Banking Data Processing
 
-**Status:** Development completed; tested locally.
+A Python integration service for retrieving, validating, and processing anti-fraud data for a banking workflow.
 
-## 🎯 Engineering Interests
+- External API integration with authentication, retries, and error handling
+- Data validation, state and version tracking using SQLite
+- Controlled output file publication
+- Local testing with pytest and a FastAPI mock server
+- Linux deployment configuration
 
-- Backend architecture and API design
-- Reliable external integrations
-- Database design and performance
-- Automated testing and code quality
-- Linux infrastructure and deployment
+**Status:** Developed and tested locally; production deployment planned.
+
+*Source code is not publicly available.*
 
 ## 📬 Contact
 
