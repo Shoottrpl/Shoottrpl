@@ -8,13 +8,13 @@ I develop Python backend systems, REST APIs, and integrations, focusing on busin
 
 ## 🛠 Tech Stack
 
-**Backend:** Python · Django · Django REST Framework · Celery
+**Backend:** Python · Django · Django REST Framework · Celery · HTTPX · Pydantic
 
 **Databases & Caching:** PostgreSQL · Redis · SQLite
 
-**Testing & Quality:** pytest · Ruff · mypy · FastAPI (mock API testing)
+**Testing & Quality:** pytest · respx · Ruff · mypy · FastAPI (mock API testing)
 
-**Infrastructure:** Docker · Docker Compose · Linux · nginx · GitHub Actions
+**Infrastructure:** Docker · Docker Compose · Linux · nginx · GitHub Actions · systemd
 
 **Additional:** Next.js · TypeScript · Playwright
 
@@ -36,25 +36,30 @@ I develop Python backend systems, REST APIs, and integrations, focusing on busin
 - Automated testing, including PostgreSQL-specific locking tests
 - Docker deployment on a Linux VPS with GitHub Actions CI/CD
 
-**Live website:** https://olexaqua.ru
+**Live deployment:** https://olexaqua.ru (restricted via HTTP Basic Authentication)
 
 **[Project overview & architecture](https://github.com/Shoottrpl/olex-showcase)**
 
 *Application source code is private.*
 
-### Anti-Fraud API Integration — Banking Data Processing
+### Secure Feed Connector — Backend Integration
 
-A Python integration service for retrieving, validating, and processing anti-fraud data for a banking workflow.
+*A production-oriented Python integration service for resilient external data ingestion and controlled file delivery.*
 
-- External API integration with authentication, retries, and error handling
-- Data validation, state and version tracking using SQLite
-- Controlled output file publication
-- Local testing with pytest and a FastAPI mock server
-- Linux deployment configuration
+**Status:** Implemented and tested locally; target infrastructure acceptance pending.
 
-**Status:** Developed and tested locally; production deployment planned.
+**Backend engineering highlights:**
 
-*Source code is not publicly available.*
+- HTTPX client with authenticated API access, bounded retries, and error classification
+- Transactional SQLite state management and data-version tracking
+- Dataset validation, SHA-256 integrity checks, and quarantine handling
+- Staged output publication, execution locking, and recovery considerations
+- Automated tests with pytest, respx, and a FastAPI mock server
+- Scheduled Linux execution model using systemd
+
+**[Project overview & architecture](https://github.com/Shoottrpl/secure-feed-connector-showcase)**
+
+*Original application source code is private.*
 
 ## 📬 Contact
 
